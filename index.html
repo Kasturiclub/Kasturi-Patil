@@ -7,7 +7,14 @@
 
 <style>
 
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+/* ✅ GLOBAL FONT FIX (SANS-SERIF) */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
 html{scroll-behavior:smooth;}
 
 body{
@@ -97,6 +104,10 @@ color:#1e3a8a;
 margin-bottom:10px;
 }
 
+ul{
+line-height:1.8;
+}
+
 /* GRID */
 .grid{
 display:grid;
@@ -153,9 +164,10 @@ padding:14px;
 border-radius:50px;
 font-weight:bold;
 text-decoration:none;
+z-index:1000;
 }
 
-/* CHAT */
+/* CHAT BUTTON */
 .chat-btn{
 position:fixed;
 bottom:90px;
@@ -165,9 +177,11 @@ color:white;
 padding:14px;
 border-radius:50px;
 cursor:pointer;
+font-weight:bold;
+z-index:1000;
 }
 
-/* CHAT BOX */
+/* CHAT BOX FIXED */
 .chatbox{
 position:fixed;
 bottom:150px;
@@ -180,6 +194,7 @@ box-shadow:0 5px 25px rgba(0,0,0,0.2);
 display:none;
 flex-direction:column;
 overflow:hidden;
+z-index:1000;
 }
 
 .chat-header{
@@ -253,7 +268,8 @@ Dr. Kasturi Patil Career Campus
 <h2>👩‍🏫 About Dr. Kasturi Patil</h2>
 
 <p>
-Dr. Kasturi Patil is a distinguished researcher, Industry Expert, Guest Speaker, Career Coach, and PhD holder in Engineering. She specializes in RF Engineering, Machine Learning (ML), Artificial Intelligence (AI), and Industry-Oriented Skill Development.
+Dr. Kasturi Patil is a distinguished researcher, Industry Expert, Guest Speaker, Career Coach, and PhD holder in Engineering.
+She specializes in RF Engineering, Machine Learning (ML), Artificial Intelligence (AI), and Industry-Oriented Skill Development.
 </p>
 
 <p>
@@ -316,8 +332,7 @@ She has delivered <b>210+ Technical Webinars</b> and conducted <b>87+ ATAL FDP P
 
 <br>
 
-<h3>📞 WhatsApp Direct</h3>
-<p><b>9730858130</b></p>
+<p><b>WhatsApp:</b> 9730858130</p>
 
 </div>
 </section>
@@ -325,7 +340,7 @@ She has delivered <b>210+ Technical Webinars</b> and conducted <b>87+ ATAL FDP P
 <!-- WHATSAPP -->
 <a class="whatsapp"
 href="https://wa.me/919730858130?text=Hello%20Ma'am%20I%20need%20career%20guidance">
-💬 Chat
+💬 WhatsApp
 </a>
 
 <!-- CHATBOT -->
@@ -336,7 +351,7 @@ href="https://wa.me/919730858130?text=Hello%20Ma'am%20I%20need%20career%20guidan
 <div class="chat-header">Career AI Assistant</div>
 
 <div class="chat-body" id="chatBody">
-👋 Ask me about Resume, AI, ML, Jobs, Interviews
+👋 Ask me about Resume, Jobs, AI, ML, Career
 </div>
 
 <div class="chat-input">
@@ -355,8 +370,13 @@ href="https://wa.me/919730858130?text=Hello%20Ma'am%20I%20need%20career%20guidan
 
 function toggleChat(){
 let box=document.getElementById("chatbox");
-box.style.display=(box.style.display==="flex")?"none":"flex";
+
+if(box.style.display==="flex"){
+box.style.display="none";
+}else{
+box.style.display="flex";
 box.style.flexDirection="column";
+}
 }
 
 function sendMsg(){
@@ -376,7 +396,7 @@ if(msg.includes("resume")){
 reply="Build ATS friendly resume with skills + projects.";
 }
 else if(msg.includes("job")){
-reply="Improve LinkedIn + projects + skills.";
+reply="Improve LinkedIn + skills + projects.";
 }
 else if(msg.includes("ai")||msg.includes("ml")){
 reply="Start with Python + basics + projects.";
