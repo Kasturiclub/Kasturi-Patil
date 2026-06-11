@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Kasturi Patil Career Campus</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#f5f7fb;color:#222}
+header{background:#123C69;color:white;padding:50px 20px;text-align:center}
+.hero{max-width:1000px;margin:auto}
+section{max-width:1100px;margin:auto;padding:25px}
+.card{background:white;border-radius:12px;padding:20px;margin:15px 0;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+h2{color:#123C69}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px}
+.btn{display:inline-block;background:#D4AF37;color:#000;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:bold}
+footer{background:#123C69;color:white;text-align:center;padding:20px}
+ul{padding-left:20px}
+</style>
+</head>
+<body>
+<header>
+<div class="hero">
+<h1>🎓 Dr. Kasturi Patil Career Campus</h1>
+<h3>From Campus to Corporate</h3>
+<p>Career Guidance | Placement Preparation | Skill Development | Industry Readiness</p>
+<a class="btn" href="#">Free Career Assessment</a>
+</div>
+</header>
+
+<section>
+<div class="card">
+<h2>👩‍🏫 About Dr. Kasturi Patil</h2>
+<p><b>English:</b> Dr. Kasturi Patil is a PhD holder, Industry Expert, Guest Speaker, Career Coach and Mentor helping students become industry-ready.</p>
+<p><b>मराठी:</b> डॉ. कस्तुरी पाटील या PhD धारक, Industry Expert, Guest Speaker आणि Career Coach आहेत. त्या विद्यार्थ्यांना Career Planning, Placement Preparation आणि Industry Skills मध्ये मार्गदर्शन करतात.</p>
+</div>
+
+<div class="card">
+<h2>🎯 Our Services | आमच्या सेवा</h2>
+<div class="grid">
+<div><h3>Career Guidance</h3><ul><li>Career Planning</li><li>Higher Education</li><li>Roadmaps</li></ul></div>
+<div><h3>Placement Preparation</h3><ul><li>Resume Review</li><li>LinkedIn</li><li>Mock Interviews</li></ul></div>
+<div><h3>Skill Development</h3><ul><li>AI Tools</li><li>Python</li><li>EV</li><li>VLSI</li></ul></div>
+<div><h3>Industry Mentorship</h3><ul><li>Projects</li><li>Internships</li><li>Company Skills Maps</li></ul></div>
+</div>
+</div>
+
+<div class="card">
+<h2>🏢 Company Skills Maps</h2>
+<p>Google | Oracle | TCS | Infosys | Dassault Systèmes | EV Companies | VLSI Companies</p>
+</div>
+
+<div class="card">
+<h2>📋 Free Career Assessment Form</h2>
+<p>Collect student details through Google Forms integration.</p>
+<form>
+<input placeholder="Full Name" style="width:100%;padding:10px;margin:5px 0">
+<input placeholder="College Name" style="width:100%;padding:10px;margin:5px 0">
+<input placeholder="Branch" style="width:100%;padding:10px;margin:5px 0">
+<input placeholder="Mobile Number" style="width:100%;padding:10px;margin:5px 0">
+<textarea placeholder="Career Goal" style="width:100%;padding:10px;margin:5px 0"></textarea>
+</form>
+</div>
+
+<div class="card">
+<h2>📞 Contact</h2>
+<p>📧 Email: kasturipatil8130@gmail.com</p>
+<p>📺 YouTube: Dr. Kasturi Patil</p>
+<p>📸 Instagram: Dr. Kasturi Patil</p>
+<p>📘 Facebook: Kasturi Patil</p>
+<p>💼 LinkedIn: Kasturi Patil, PhD</p>
+</div>
+</section>
+
+<footer>
+<h3>Building Industry-Ready Engineers</h3>
+<p>Dr. Kasturi Patil Career Campus</p>
+</footer>
+</body>
+</html>
