@@ -5,15 +5,12 @@
 <title>Dr. Kasturi Patil Career Campus</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ICONS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
 html{scroll-behavior:smooth;}
 
 body{
-background:#f4f7ff;
+background:#f6f8ff;
 color:#222;
 }
 
@@ -22,12 +19,12 @@ nav{
 position:fixed;
 top:0;
 width:100%;
-background:#fff;
+background:white;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 25px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
+padding:14px 25px;
+box-shadow:0 2px 12px rgba(0,0,0,0.08);
 z-index:1000;
 }
 
@@ -67,22 +64,34 @@ color:#ffd700;
 font-weight:bold;
 }
 
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.btn1{background:#ffd700;color:#000;}
+.btn2{background:white;color:#1e3a8a;margin-left:10px;}
+
 /* SECTION */
 section{
-padding:60px 10%;
+padding:70px 10%;
 }
 
 .card{
 background:white;
 padding:25px;
-border-radius:12px;
-box-shadow:0 3px 15px rgba(0,0,0,0.08);
-margin-bottom:20px;
+border-radius:14px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+margin-bottom:25px;
 }
 
 h2{
 color:#1e3a8a;
-margin-bottom:15px;
+margin-bottom:12px;
 }
 
 ul{
@@ -98,25 +107,19 @@ gap:15px;
 
 .box{
 background:#eef2ff;
-padding:15px;
+padding:18px;
 border-radius:10px;
 text-align:center;
 font-weight:bold;
 }
 
-/* SOCIAL ICONS */
-.social a{
-display:inline-flex;
-align-items:center;
-gap:8px;
-margin:8px 12px 0 0;
-text-decoration:none;
+/* LINKS */
+a.link{
+display:block;
+margin:6px 0;
 color:#1e3a8a;
+text-decoration:none;
 font-weight:bold;
-}
-
-.social i{
-font-size:18px;
 }
 
 /* FORM */
@@ -149,12 +152,12 @@ background:#25D366;
 color:white;
 padding:14px 16px;
 border-radius:50px;
-text-decoration:none;
 font-weight:bold;
+text-decoration:none;
 z-index:1000;
 }
 
-/* CHATBOT */
+/* CHAT */
 .chat-btn{
 position:fixed;
 bottom:90px;
@@ -176,7 +179,7 @@ width:300px;
 height:400px;
 background:white;
 border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,0.2);
+box-shadow:0 8px 25px rgba(0,0,0,0.2);
 display:none;
 flex-direction:column;
 overflow:hidden;
@@ -223,7 +226,6 @@ padding:20px;
 background:#0f172a;
 color:white;
 }
-
 </style>
 </head>
 
@@ -231,10 +233,9 @@ color:white;
 
 <!-- NAV -->
 <nav>
-<h2>Dr. Kasturi Patil Career Campus</h2>
+<h2>Dr. Kasturi Patil</h2>
 <div>
 <a href="#about">About</a>
-<a href="#achievements">Achievements</a>
 <a href="#services">Services</a>
 <a href="#contact">Contact</a>
 </div>
@@ -243,8 +244,11 @@ color:white;
 <!-- HERO -->
 <div class="hero">
 <h1>Dr. Kasturi Patil Career Campus</h1>
-<p>PhD | Industry Expert | Guest Speaker | Career Coach</p>
-<p class="tag">210+ Webinars | 87+ ATAL FDPs | 21 States | Thousands Mentored</p>
+<p>PhD | Industry Expert | AI & ML Mentor | Career Coach</p>
+<p class="tag">210+ Webinars | 87+ FDPs | 21 States | Thousands Mentored</p>
+
+<a href="#contact" class="btn btn1">Book ₹99 Session</a>
+<a href="#services" class="btn btn2">Explore Services</a>
 </div>
 
 <!-- ABOUT -->
@@ -253,51 +257,24 @@ color:white;
 
 <h2>👩‍🏫 About Dr. Kasturi Patil</h2>
 
-<h3>English</h3>
 <p>
-<b>Dr. Kasturi Patil</b> is a distinguished researcher, Industry Expert, Guest Speaker, Career Coach, and PhD holder in Engineering.
-She has extensive experience in RF Engineering, Machine Learning (ML), Artificial Intelligence (AI), and Industry-Oriented Skill Development.
+<b>Dr. Kasturi Patil</b> is a distinguished researcher, Industry Expert, Guest Speaker, Career Coach, and PhD holder in Engineering. She specializes in RF Engineering, Artificial Intelligence (AI), Machine Learning (ML), and Industry Skill Development.
 </p>
 
+<p>
+She has delivered <b>210+ Technical Webinars</b> and conducted <b>87+ ATAL FDP Programs</b> across <b>21 states of India</b>, empowering students, faculty members, and researchers with industry-oriented knowledge.
+</p>
+
+<p><b>Mentorship Areas:</b></p>
 <ul>
-<li>210+ Technical Webinars across India</li>
-<li>87+ ATAL Faculty Development Programs (FDPs)</li>
-<li>Mentored thousands of students</li>
 <li>Resume Building & LinkedIn Optimization</li>
 <li>Placement Preparation & Mock Interviews</li>
 <li>AI, ML & Emerging Technologies</li>
+<li>Career Planning & Growth Strategy</li>
 <li>Engineering Research & Innovation</li>
 </ul>
 
-<p>
-Her mission is to bridge the gap between academia and industry and help students become confident, skilled, and industry-ready professionals.
-</p>
-
-<br>
-
-<h3>मराठी</h3>
-<p>
-<b>डॉ. कस्तुरी पाटील</b> या अभियांत्रिकी क्षेत्रातील PhD धारक , Industry Expert, Guest Speaker आणि Career Coach आहेत. RF Engineering, Machine Learning (ML), 
-Artificial Intelligence (AI) आणि Industry-Oriented Skill Development  या क्षेत्रांमध्ये त्यांना विशेष अनुभव आहे.
-त्यांनी भारतातील 21 राज्यांमध्ये 210 पेक्षा अधिक तांत्रिक वेबिनार तसेच 87 पेक्षा अधिक ATAL Faculty Development Programs (FDPs)
- यशस्वीरीत्या आयोजित व मार्गदर्शित केले आहेत. या माध्यमातून त्यांनी प्राध्यापक, संशोधक आणि विद्यार्थ्यांना आधुनिक तंत्रज्ञान व उद्योगातील आवश्यक कौशल्यांची माहिती दिली आहे.
-त्यांनी हजारो विद्यार्थ्यांना खालील बाबींमध्ये मार्गदर्शन केले आहे.
-</p>
-
-</div>
-</section>
-
-<!-- ACHIEVEMENTS -->
-<section id="achievements">
-<div class="card">
-<h2>🏆 Achievements</h2>
-
-<div class="grid">
-<div class="box">210+ Webinars</div>
-<div class="box">87+ FDPs</div>
-<div class="box">21 States</div>
-<div class="box">Thousands Mentored</div>
-</div>
+<p><b>Mission:</b> To bridge the gap between academia and industry and make students industry-ready professionals.</p>
 
 </div>
 </section>
@@ -305,14 +282,16 @@ Artificial Intelligence (AI) आणि Industry-Oriented Skill Development  य�
 <!-- SERVICES -->
 <section id="services">
 <div class="card">
+
 <h2>🎯 Services</h2>
 <ul>
-<li>Resume Building & LinkedIn Optimization</li>
-<li>Mock Interviews & Placement Preparation</li>
-<li>AI & ML Career Guidance</li>
-<li>Engineering Research & Innovation Mentoring</li>
-<li>Industry Skill Development Programs</li>
+<li>₹99 One-on-One Career Guidance Session</li>
+<li>Resume & LinkedIn Optimization</li>
+<li>Mock Interviews</li>
+<li>AI & ML Career Training</li>
+<li>Research Mentorship</li>
 </ul>
+
 </div>
 </section>
 
@@ -320,65 +299,52 @@ Artificial Intelligence (AI) आणि Industry-Oriented Skill Development  य�
 <section id="contact">
 <div class="card">
 
-<h2>📩 Student Enquiry</h2>
+<h2>📩 Student Enquiry (₹99 Registration)</h2>
 
 <form>
 <input type="text" placeholder="Name" required>
 <input type="email" placeholder="Email" required>
-<input type="tel" placeholder="Mobile Number" required>
-<textarea rows="5" placeholder="Your Query"></textarea>
-<button type="submit">Submit</button>
+<input type="tel" placeholder="Mobile Number (WhatsApp)" required>
+<textarea placeholder="Your Career Query"></textarea>
+<button type="submit">Register for ₹99 Session</button>
 </form>
 
 <br>
 
 <h3>🌐 Follow Us</h3>
-<div class="social">
 
-<a href="https://youtube.com">
-<i class="fab fa-youtube"></i> YouTube
-</a>
-
-<a href="https://instagram.com">
-<i class="fab fa-instagram"></i> Instagram
-</a>
-
-<a href="https://facebook.com">
-<i class="fab fa-facebook"></i> Facebook
-</a>
-
-<a href="https://linkedin.com">
-<i class="fab fa-linkedin"></i> LinkedIn
-</a>
-
-</div>
+<a class="link" href="https://youtube.com/@kasthurisudampatil">▶ YouTube</a>
+<a class="link" href="https://instagram.com/kasturisudampatil">📸 Instagram</a>
+<a class="link" href="https://facebook.com/kasturipatil8130">📘 Facebook</a>
+<a class="link" href="https://linkedin.com/in/kasturi-patil-14bbb864">💼 LinkedIn</a>
 
 <br>
 
+<p><b>WhatsApp:</b> 9730858130</p>
 <p><b>Email:</b> kasturipatil8130@gmail.com</p>
 
 </div>
 </section>
 
-<!-- WHATSAPP -->
+<!-- WHATSAPP BUTTON -->
 <a class="whatsapp"
-href="https://wa.me/919730858130?text=Hello%20Dr.%20Kasturi%20Patil%20Ma'am%20I%20need%20career%20guidance">
+href="https://wa.me/919730858130?text=Hi%20Ma'am%2C%20I%20want%20₹99%20career%20guidance%20session">
 💬 WhatsApp
 </a>
 
 <!-- CHATBOT -->
-<div class="chat-btn" onclick="toggleChat()">🤖 AI</div>
+<div class="chat-btn" onclick="toggleChat()">🤖 AI Career Bot</div>
 
 <div class="chatbox" id="chatbox">
 
 <div class="chat-header">Career AI Assistant</div>
 
 <div class="chat-body" id="chatBody">
-👋 Hello! Ask me about Resume, Jobs, AI, ML, Career.
+👋 Hi! I can help you with Resume, Jobs, AI, ML, Interviews & Career Planning.
 </div>
 
 <div class="chat-input">
-<input id="userInput" placeholder="Ask something...">
+<input id="userInput" placeholder="Ask your career question...">
 <button onclick="sendMsg()">Send</button>
 </div>
 
@@ -392,7 +358,7 @@ href="https://wa.me/919730858130?text=Hello%20Dr.%20Kasturi%20Patil%20Ma'am%20I%
 <script>
 function toggleChat(){
 let box=document.getElementById("chatbox");
-box.style.display = (box.style.display==="flex")?"none":"flex";
+box.style.display=(box.style.display==="flex")?"none":"flex";
 box.style.flexDirection="column";
 }
 
@@ -408,11 +374,18 @@ chat.innerHTML+="<br><b>You:</b> "+msg;
 msg=msg.toLowerCase();
 let reply="";
 
-if(msg.includes("resume")) reply="Resume should be ATS friendly & 1 page.";
-else if(msg.includes("job")) reply="Focus on skills + projects + LinkedIn.";
-else if(msg.includes("ai")||msg.includes("ml")) reply="Start with Python + Math + Projects.";
-else if(msg.includes("interview")) reply="Practice mock interviews daily.";
-else reply="I can help with Resume, Jobs, AI/ML, Career.";
+if(msg.includes("resume")){
+reply="Build ATS-friendly resume with skills + projects.";
+}
+else if(msg.includes("job")){
+reply="Focus on LinkedIn, skills and internships.";
+}
+else if(msg.includes("ai")||msg.includes("ml")){
+reply="Start with Python, Math and projects.";
+}
+else{
+reply="I can help with Resume, Jobs, AI/ML, Interviews & Career Planning.";
+}
 
 chat.innerHTML+="<br><b>AI:</b> "+reply;
 
