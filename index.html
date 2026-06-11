@@ -17,7 +17,7 @@ font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 body{
 background:#f4f7ff;
 color:#1a1a1a;
-line-height:1.6;
+line-height:1.5;
 }
 
 /* NAV */
@@ -25,7 +25,7 @@ nav{
 position:fixed;
 top:0;
 width:100%;
-background:#fff;
+background:white;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -35,22 +35,13 @@ z-index:1000;
 }
 
 .logo{
-display:flex;
-align-items:center;
-gap:10px;
 font-weight:700;
 color:#1e3a8a;
 }
 
-.logo img{
-width:34px;
-height:34px;
-border-radius:50%;
-}
-
 /* HERO */
 .hero{
-margin-top:65px;
+margin-top:60px;
 background:linear-gradient(135deg,#0f172a,#1e3a8a);
 color:white;
 text-align:center;
@@ -58,24 +49,24 @@ padding:70px 20px;
 }
 
 .hero h1{
-font-size:40px;
+font-size:38px;
 }
 
 .hero p{
 opacity:0.9;
-margin-top:8px;
+margin-top:6px;
 }
 
 .tag{
-margin-top:12px;
+margin-top:10px;
 color:#ffd700;
 font-weight:600;
 }
 
 .btn{
 display:inline-block;
-margin-top:18px;
-padding:11px 16px;
+margin-top:15px;
+padding:10px 15px;
 border-radius:8px;
 text-decoration:none;
 font-weight:600;
@@ -86,49 +77,44 @@ font-weight:600;
 
 /* SECTION */
 section{
-padding:50px 10%;
+padding:45px 10%;
 }
 
 .card{
-background:#fff;
-padding:20px;
+background:white;
+padding:18px;
 border-radius:12px;
-box-shadow:0 4px 18px rgba(0,0,0,0.06);
-margin-bottom:18px;
+box-shadow:0 4px 15px rgba(0,0,0,0.06);
+margin-bottom:15px;
 }
 
 h2{
 color:#1e3a8a;
-margin-bottom:10px;
-}
-
-h3{
-margin-top:10px;
-color:#111;
+margin-bottom:8px;
 }
 
 /* GRID */
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:12px;
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+gap:10px;
 margin-top:10px;
 }
 
 .box{
 background:#eef2ff;
-padding:14px;
+padding:12px;
 border-radius:10px;
 text-align:center;
 font-weight:600;
 }
 
-/* LINKS */
+/* SOCIAL */
 .social a{
 display:block;
-margin:6px 0;
-text-decoration:none;
+margin:5px 0;
 color:#1e3a8a;
+text-decoration:none;
 font-weight:600;
 }
 
@@ -150,7 +136,7 @@ border:none;
 border-radius:8px;
 background:#1e3a8a;
 color:white;
-font-size:15px;
+font-weight:600;
 cursor:pointer;
 }
 
@@ -179,10 +165,9 @@ padding:13px;
 border-radius:50px;
 cursor:pointer;
 font-weight:700;
-z-index:1000;
 }
 
-/* CHAT BOX */
+/* CHATBOX */
 .chatbox{
 position:fixed;
 bottom:140px;
@@ -237,7 +222,7 @@ text-align:center;
 padding:15px;
 background:#0f172a;
 color:white;
-margin-top:20px;
+margin-top:10px;
 }
 
 </style>
@@ -247,19 +232,16 @@ margin-top:20px;
 
 <!-- NAV -->
 <nav>
-<div class="logo">
-<img src="https://via.placeholder.com/80" alt="KP Logo">
-Dr. Kasturi Patil Career Campus
-</div>
+<div class="logo">Dr. Kasturi Patil Career Campus</div>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
 <h1>Dr. Kasturi Patil</h1>
-<p>PhD | Industry Expert | AI & ML Mentor | Career Coach</p>
-<p class="tag">210+ Webinars | 87+ FDPs | 21 States | Thousands Mentored</p>
+<p>PhD | AI & ML Mentor | Career Coach | Industry Expert</p>
+<p class="tag">210+ Webinars | 87+ FDPs | 21 States</p>
 
-<a href="#contact" class="btn btn1">Get Guidance</a>
+<a href="#contact" class="btn btn1">Free Guidance</a>
 <a href="#contact" class="btn btn2">₹99 Session</a>
 </div>
 
@@ -267,21 +249,19 @@ Dr. Kasturi Patil Career Campus
 <section>
 <div class="card">
 <h2>👩‍🏫 About</h2>
-
 <p>
-Dr. Kasturi Patil is a PhD holder, Industry Expert, Career Coach with expertise in AI, ML, RF Engineering and Industry Skill Development.
-She has delivered 210+ webinars and 87+ FDPs across 21 states.
+Dr. Kasturi Patil is a PhD holder and Industry Expert specializing in AI, ML, RF Engineering and Career Development.
+She has guided thousands of students across India.
 </p>
 
-<h3>Mentorship Areas</h3>
+<h3>Mentorship</h3>
 <ul>
 <li>Resume Building</li>
 <li>Mock Interviews</li>
-<li>AI & ML Training</li>
-<li>Career Guidance</li>
+<li>AI / ML Guidance</li>
+<li>Career Planning</li>
 <li>Engineering Research</li>
 </ul>
-
 </div>
 </section>
 
@@ -325,7 +305,6 @@ She has delivered 210+ webinars and 87+ FDPs across 21 states.
 </form>
 
 <p style="margin-top:10px;"><b>WhatsApp:</b> 9730858130</p>
-
 </div>
 </section>
 
@@ -335,20 +314,23 @@ href="https://wa.me/919730858130?text=Hello%20I%20need%20career%20guidance">
 💬
 </a>
 
-<!-- CHAT -->
-<div class="chat-btn" onclick="toggleChat()">AI</div>
+<!-- CHAT BUTTON -->
+<div class="chat-btn" onclick="toggleChat()">Mrunmayi AI</div>
 
+<!-- CHATBOX -->
 <div class="chatbox" id="chatbox">
-<div class="chat-header">Career AI Assistant</div>
+
+<div class="chat-header">Mrunmayi AI Assistant</div>
 
 <div class="chat-body" id="chatBody">
-Hello! Ask me about Resume, Jobs, AI, Career.
+Hello 👋 I am Mrunmayi AI. Ask me about Career, Resume, Jobs, AI, ML.
 </div>
 
 <div class="chat-input">
-<input id="userInput" placeholder="Ask...">
+<input id="userInput" placeholder="Ask something...">
 <button onclick="sendMsg()">Send</button>
 </div>
+
 </div>
 
 <!-- FOOTER -->
@@ -360,6 +342,7 @@ Dr. Kasturi Patil Career Campus © 2026
 
 function toggleChat(){
 let box=document.getElementById("chatbox");
+
 if(box.style.display==="flex"){
 box.style.display="none";
 }else{
@@ -369,6 +352,7 @@ box.style.flexDirection="column";
 }
 
 function sendMsg(){
+
 let input=document.getElementById("userInput");
 let chat=document.getElementById("chatBody");
 
@@ -382,19 +366,22 @@ msg=msg.toLowerCase();
 let reply="";
 
 if(msg.includes("resume")){
-reply="Make ATS friendly resume with skills & projects.";
+reply="Build ATS-friendly resume with skills + projects.";
 }
 else if(msg.includes("job")){
-reply="Improve skills + LinkedIn + projects.";
+reply="Improve LinkedIn + projects + skills.";
 }
-else if(msg.includes("ai")||msg.includes("ml")){
-reply="Start with Python + basics + projects.";
+else if(msg.includes("ai") || msg.includes("ml")){
+reply="Start with Python, basics and real projects.";
+}
+else if(msg.includes("interview")){
+reply="Practice mock interviews and communication skills.";
 }
 else{
-reply="I can help with Career, Resume, AI, Jobs.";
+reply="I can help with Career, Resume, Jobs, AI, ML.";
 }
 
-chat.innerHTML+="<br><b>AI:</b> "+reply;
+chat.innerHTML+="<br><b>Mrunmayi AI:</b> "+reply;
 
 input.value="";
 chat.scrollTop=chat.scrollHeight;
