@@ -6,16 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-html{
-scroll-behavior:smooth;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+html{scroll-behavior:smooth;}
 
 body{
 background:#f5f7ff;
@@ -30,27 +22,13 @@ width:100%;
 background:white;
 display:flex;
 justify-content:space-between;
-align-items:center;
 padding:15px 30px;
 box-shadow:0 2px 10px rgba(0,0,0,0.1);
 z-index:1000;
 }
 
-nav h2{
-color:#1e3a8a;
-font-size:20px;
-}
-
-nav a{
-margin-left:15px;
-text-decoration:none;
-color:#333;
-font-weight:bold;
-}
-
-nav a:hover{
-color:#1e3a8a;
-}
+nav h2{color:#1e3a8a;}
+nav a{margin-left:15px;text-decoration:none;color:#333;font-weight:bold;}
 
 /* HERO */
 .hero{
@@ -61,16 +39,10 @@ text-align:center;
 padding:90px 20px;
 }
 
-.hero h1{
-font-size:40px;
-}
+.hero h1{font-size:40px;}
+.hero p{margin-top:10px;opacity:0.9;}
 
-.hero p{
-margin-top:10px;
-opacity:0.9;
-}
-
-.hero .btn{
+.btn{
 display:inline-block;
 margin-top:20px;
 padding:12px 20px;
@@ -79,21 +51,11 @@ text-decoration:none;
 font-weight:bold;
 }
 
-.btn1{
-background:#ffd700;
-color:#000;
-margin-right:10px;
-}
-
-.btn2{
-background:white;
-color:#1e3a8a;
-}
+.btn1{background:#ffd700;color:#000;}
+.btn2{background:white;color:#1e3a8a;margin-left:10px;}
 
 /* SECTIONS */
-section{
-padding:60px 10%;
-}
+section{padding:60px 10%;}
 
 .card{
 background:white;
@@ -103,49 +65,65 @@ box-shadow:0 3px 15px rgba(0,0,0,0.08);
 margin-bottom:20px;
 }
 
-h2{
-color:#1e3a8a;
-margin-bottom:10px;
-}
-
-/* GRID */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-}
-
-.box{
-background:#eef2ff;
+/* CHATBOT */
+.chatbot-btn{
+position:fixed;
+bottom:90px;
+right:20px;
+background:#1e3a8a;
+color:white;
 padding:15px;
-border-radius:10px;
-text-align:center;
+border-radius:50px;
+cursor:pointer;
 font-weight:bold;
 }
 
-/* FORM */
-input,textarea{
-width:100%;
-padding:12px;
-margin-top:10px;
-border:1px solid #ccc;
-border-radius:8px;
+.chatbox{
+position:fixed;
+bottom:150px;
+right:20px;
+width:300px;
+height:400px;
+background:white;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+display:none;
+flex-direction:column;
+overflow:hidden;
 }
 
-button{
-width:100%;
-padding:12px;
-margin-top:10px;
-border:none;
-border-radius:8px;
+.chat-header{
 background:#1e3a8a;
 color:white;
-font-size:16px;
-cursor:pointer;
+padding:10px;
+font-weight:bold;
 }
 
-button:hover{
-background:#0f172a;
+.chat-body{
+flex:1;
+padding:10px;
+font-size:14px;
+overflow-y:auto;
+}
+
+.chat-input{
+display:flex;
+border-top:1px solid #ddd;
+}
+
+.chat-input input{
+flex:1;
+padding:10px;
+border:none;
+outline:none;
+}
+
+.chat-input button{
+background:#1e3a8a;
+color:white;
+border:none;
+padding:10px;
+cursor:pointer;
 }
 
 /* WHATSAPP */
@@ -155,13 +133,12 @@ bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
-padding:14px 16px;
+padding:14px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
 }
 
-/* FOOTER */
 footer{
 text-align:center;
 padding:20px;
@@ -180,19 +157,17 @@ color:white;
 <div>
 <a href="#about">About</a>
 <a href="#services">Services</a>
-<a href="#achievements">Achievements</a>
 <a href="#contact">Contact</a>
 </div>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
-<h1>Dr. Kasturi Patil Career Campus</h1>
-<p>PhD | Industry Expert | AI & ML Mentor | Career Coach</p>
-<p>210+ Webinars | 87+ FDPs | 21 States | Thousands Mentored</p>
+<h1>Career Campus</h1>
+<p>AI | ML | RF Engineering | Career Guidance</p>
 
 <a href="#contact" class="btn btn1">Get Guidance</a>
-<a href="#services" class="btn btn2">Explore Services</a>
+<a href="#services" class="btn btn2">Services</a>
 </div>
 
 <!-- ABOUT -->
@@ -200,29 +175,9 @@ color:white;
 <div class="card">
 <h2>About</h2>
 <p>
-Dr. Kasturi Patil is a PhD holder, Industry Expert and Career Coach specializing in AI, ML, RF Engineering and Skill Development.
-Her mission is to bridge academia and industry.
+Dr. Kasturi Patil is a PhD holder, Industry Expert and Career Coach.
+She helps students become industry-ready in AI, ML, and Engineering domains.
 </p>
-
-<ul>
-<li>210+ Webinars</li>
-<li>87+ FDP Programs</li>
-<li>Thousands Mentored</li>
-<li>Career & Placement Training</li>
-</ul>
-</div>
-</section>
-
-<!-- ACHIEVEMENTS -->
-<section id="achievements">
-<div class="card">
-<h2>Achievements</h2>
-<div class="grid">
-<div class="box">210+ Webinars</div>
-<div class="box">87+ FDPs</div>
-<div class="box">21 States</div>
-<div class="box">Thousands Mentored</div>
-</div>
 </div>
 </section>
 
@@ -233,9 +188,8 @@ Her mission is to bridge academia and industry.
 <ul>
 <li>Resume Building</li>
 <li>Mock Interviews</li>
-<li> Antenna Design |SIWave|ICEPAK simulation Guidance</li>
-<li>AI & ML Guidance</li>
-<li>Research Mentoring(Engineering PhD Guidance)</li>
+<li>AI/ML Guidance</li>
+<li>Career Planning</li>
 </ul>
 </div>
 </section>
@@ -246,10 +200,10 @@ Her mission is to bridge academia and industry.
 <h2>Student Enquiry</h2>
 
 <form>
-<input type="text" placeholder="Name" required>
-<input type="email" placeholder="Email" required>
-<input type="tel" placeholder="Mobile" required>
-<textarea rows="5" placeholder="Message"></textarea>
+<input type="text" placeholder="Name"><br><br>
+<input type="email" placeholder="Email"><br><br>
+<input type="text" placeholder="Mobile"><br><br>
+<textarea rows="4" placeholder="Message"></textarea><br><br>
 <button type="submit">Submit</button>
 </form>
 
@@ -259,14 +213,72 @@ Her mission is to bridge academia and industry.
 </section>
 
 <!-- WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/919730858130" target="_blank">
+<a class="whatsapp" href="https://wa.me/919730858130?text=Need%20Career%20Guidance">
 WhatsApp
 </a>
+
+<!-- CHATBOT BUTTON -->
+<div class="chatbot-btn" onclick="toggleChat()">💬 Ask AI</div>
+
+<!-- CHATBOX -->
+<div class="chatbox" id="chatbox">
+<div class="chat-header">Career AI Assistant</div>
+
+<div class="chat-body" id="chatBody">
+Hello 👋 I am your Career Assistant.<br>
+Ask me about Resume, Jobs, AI, ML, Career.
+</div>
+
+<div class="chat-input">
+<input id="userInput" type="text" placeholder="Ask something...">
+<button onclick="sendMsg()">Send</button>
+</div>
+</div>
 
 <!-- FOOTER -->
 <footer>
 © 2026 Dr. Kasturi Patil Career Campus
 </footer>
+
+<script>
+function toggleChat(){
+let box = document.getElementById("chatbox");
+box.style.display = (box.style.display === "flex") ? "none" : "flex";
+box.style.flexDirection = "column";
+}
+
+function sendMsg(){
+let input = document.getElementById("userInput");
+let chat = document.getElementById("chatBody");
+
+let msg = input.value;
+if(msg.trim() === "") return;
+
+chat.innerHTML += "<br><b>You:</b> " + msg;
+
+let reply = "";
+
+msg = msg.toLowerCase();
+
+if(msg.includes("resume")){
+reply = "Resume should be 1 page, skill-based, and ATS-friendly.";
+}
+else if(msg.includes("ai") || msg.includes("ml")){
+reply = "AI/ML requires Python, Math, and Projects. Start with basics.";
+}
+else if(msg.includes("job")){
+reply = "Focus on skills + projects + LinkedIn optimization.";
+}
+else{
+reply = "I can help with Resume,Engineering career guidance, Electronics, Radio Frequncy, EV, AI/ML, Jobs, Career Planning.";
+}
+
+chat.innerHTML += "<br><b>AI:</b> " + reply;
+
+input.value = "";
+chat.scrollTop = chat.scrollHeight;
+}
+</script>
 
 </body>
 </html>
