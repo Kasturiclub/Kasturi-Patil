@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Dr. Kasturi Patil Career Campus</title>
+<title>Kasturi AI Career Nexus | Engineering Mentorship Platform</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
@@ -11,13 +11,13 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+font-family:system-ui, Arial, sans-serif;
 }
 
 body{
-background:#f4f7ff;
-color:#1a1a1a;
-line-height:1.5;
+background:#0b1220;
+color:#fff;
+line-height:1.7;
 }
 
 /* NAV */
@@ -25,169 +25,165 @@ nav{
 position:fixed;
 top:0;
 width:100%;
-background:white;
+background:#0f172a;
 display:flex;
 justify-content:space-between;
 align-items:center;
 padding:12px 20px;
-box-shadow:0 2px 10px rgba(0,0,0,0.08);
+border-bottom:1px solid #ffffff10;
 z-index:1000;
 }
 
 .logo{
-font-weight:700;
-color:#1e3a8a;
+font-weight:900;
+color:#00ffd5;
+letter-spacing:1px;
 }
 
 /* HERO */
 .hero{
-margin-top:60px;
-background:linear-gradient(135deg,#0f172a,#1e3a8a);
-color:white;
 text-align:center;
-padding:70px 20px;
+padding:90px 20px;
+background:linear-gradient(135deg,#1e3a8a,#0b1220);
 }
 
 .hero h1{
-font-size:38px;
+font-size:42px;
+margin-bottom:10px;
 }
 
 .hero p{
-opacity:0.9;
-margin-top:6px;
+opacity:0.85;
+margin-bottom:6px;
 }
 
 .tag{
+color:#00ffd5;
+font-weight:700;
 margin-top:10px;
-color:#ffd700;
-font-weight:600;
 }
 
-.btn{
-display:inline-block;
-margin-top:15px;
-padding:10px 15px;
+.cta{
+margin-top:20px;
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+}
+
+button{
+padding:12px 18px;
+border:none;
 border-radius:8px;
-text-decoration:none;
-font-weight:600;
+font-weight:700;
+cursor:pointer;
 }
 
-.btn1{background:#ffd700;color:#000;}
-.btn2{background:#fff;color:#1e3a8a;margin-left:8px;}
+.primary{background:#00ffd5;color:#000;}
+.secondary{background:#ffffff15;color:#fff;border:1px solid #ffffff30;}
 
 /* SECTION */
 section{
-padding:45px 10%;
+padding:60px 12%;
 }
 
 .card{
-background:white;
-padding:18px;
-border-radius:12px;
-box-shadow:0 4px 15px rgba(0,0,0,0.06);
-margin-bottom:15px;
+background:#111a2e;
+padding:24px;
+border-radius:14px;
+border:1px solid #ffffff10;
+margin-bottom:18px;
 }
 
+/* HEADINGS */
 h2{
-color:#1e3a8a;
+color:#00ffd5;
+margin-bottom:10px;
+}
+
+h3{
+margin-top:15px;
 margin-bottom:8px;
+}
+
+/* LIST */
+ul{
+margin-left:18px;
+margin-top:8px;
+}
+
+li{
+margin-bottom:6px;
 }
 
 /* GRID */
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-gap:10px;
-margin-top:10px;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:12px;
 }
 
 .box{
-background:#eef2ff;
-padding:12px;
+background:#0b1220;
+padding:14px;
 border-radius:10px;
+border:1px solid #ffffff10;
 text-align:center;
-font-weight:600;
-}
-
-/* SOCIAL */
-.social a{
-display:block;
-margin:5px 0;
-color:#1e3a8a;
-text-decoration:none;
 font-weight:600;
 }
 
 /* FORM */
 input,textarea{
 width:100%;
-padding:10px;
-margin-top:8px;
-border:1px solid #ccc;
-border-radius:8px;
-font-family:inherit;
-}
-
-button{
-width:100%;
-padding:11px;
+padding:12px;
 margin-top:10px;
 border:none;
 border-radius:8px;
-background:#1e3a8a;
-color:white;
-font-weight:600;
-cursor:pointer;
+background:#0b1220;
+color:#fff;
+outline:none;
 }
 
-/* WHATSAPP */
-.whatsapp{
-position:fixed;
-bottom:18px;
-right:18px;
-background:#25D366;
-color:white;
-padding:14px;
-border-radius:50px;
-font-weight:700;
-text-decoration:none;
-z-index:1000;
+form button{
+width:100%;
+margin-top:10px;
+background:#00ffd5;
+color:#000;
+font-weight:800;
 }
 
-/* CHAT BUTTON */
+/* CHAT */
 .chat-btn{
 position:fixed;
-bottom:85px;
-right:18px;
-background:#1e3a8a;
-color:white;
-padding:13px;
+bottom:20px;
+right:20px;
+background:#00ffd5;
+color:#000;
+padding:12px;
 border-radius:50px;
+font-weight:800;
 cursor:pointer;
-font-weight:700;
 }
 
-/* CHATBOX */
 .chatbox{
 position:fixed;
-bottom:140px;
-right:18px;
-width:300px;
-height:380px;
-background:white;
+bottom:80px;
+right:20px;
+width:330px;
+height:420px;
+background:#0f172a;
+border:1px solid #ffffff20;
 border-radius:12px;
-box-shadow:0 8px 25px rgba(0,0,0,0.2);
 display:none;
 flex-direction:column;
 overflow:hidden;
-z-index:1000;
 }
 
 .chat-header{
-background:#1e3a8a;
-color:white;
+background:#00ffd5;
+color:#000;
 padding:10px;
-font-weight:700;
+font-weight:800;
 }
 
 .chat-body{
@@ -199,7 +195,6 @@ overflow:auto;
 
 .chat-input{
 display:flex;
-border-top:1px solid #ddd;
 }
 
 .chat-input input{
@@ -210,19 +205,22 @@ outline:none;
 }
 
 .chat-input button{
-background:#1e3a8a;
-color:white;
+background:#00ffd5;
 border:none;
-padding:10px;
+font-weight:800;
 }
 
-/* FOOTER */
-footer{
-text-align:center;
-padding:15px;
-background:#0f172a;
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:20px;
+left:20px;
+background:#25D366;
 color:white;
-margin-top:10px;
+padding:14px;
+border-radius:50px;
+font-weight:800;
+text-decoration:none;
 }
 
 </style>
@@ -230,170 +228,175 @@ margin-top:10px;
 
 <body>
 
-<!-- NAV -->
 <nav>
-<div class="logo">Dr. Kasturi Patil Career Campus</div>
+<div class="logo">KASTURI AI CAREER NEXUS</div>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
-<h1>Dr. Kasturi Patil</h1>
-<p>PhD | AI & ML Mentor | Career Coach | Industry Expert</p>
-<p class="tag"> 210+ Technical Webinars | 87+ ATAL FDPs | Outreach Across 21 States of India </p>
+<h1>Engineering Career AI & Mentorship Platform</h1>
+<p>Dr. Kasturi Patil (PhD) | AI | RF | HFSS | SIWAVE | EMI/EMC Expert</p>
+<p class="tag">B.Tech → M.Tech → PhD | Placement | Research | Industry System</p>
 
-<a href="#contact" class="btn btn1">Free Consultation</a>
-<a href="#contact" class="btn btn2"> Resume Buidling ₹99 Session</a>
+<div class="cta">
+<button class="primary" onclick="document.getElementById('form').scrollIntoView()">Start Free Guidance</button>
+<button class="secondary" onclick="toggleChat()">Ask AI Career Mentor</button>
+</div>
 </div>
 
 <!-- ABOUT -->
 <section>
 <div class="card">
-<h2>👩‍🏫 About</h2>
-<p>
-Dr. Kasturi Sudam Patil is a PhD holder, Industry Expert, Guest Speaker, and Career Mentor with specialized expertise in Artificial Intelligence (AI), Machine Learning (ML), RF Engineering, Antenna Design, and Industry-Oriented Skill Development. 
-She brings a unique blend of 6 years of research experience and 5 years of industry experience, enabling her to bridge the gap between academic concepts and real-world engineering applications.
-Over the years, she has delivered 210+ technical webinars, guest lectures, and training programs, including 87+ Faculty Development Programs (FDPs), reaching 
-students, faculty members, and professionals across 21 states of India. Through her technical sessions, mentorship initiatives, and career guidance programs,
-she has successfully guided and inspired thousands of students and engineering professionals in building industry-relevant skills and advancing their careers.
-Her areas of interest include RF and Microwave Engineering, Antenna Design, Electromagnetic Simulation, Artificial Intelligence, Machine Learning Applications, 
-and Career Development for Engineering Students and Professionals. She is passionate about empowering learners with practical knowledge, emerging 
-technologies, and the skills required to excel in today's rapidly evolving technological landscape.
 
+<h2>👩‍🏫 About Dr. Kasturi Patil</h2>
+
+<p>
+<b>Dr. Kasturi Patil</b> is a <b>PhD Researcher, Industry Expert, AI & RF Engineering Mentor, and Career Coach</b> with strong expertise in academic + industry domains.
+She has <b>6+ years academic research experience</b> and <b>5+ years industry experience</b>.
 </p>
 
-<h3>Mentorship</h3>
+<p>
+Her expertise includes <b>HFSS Simulation, SIWAVE Analysis, EMI/EMC Systems, RF Engineering, Artificial Intelligence (AI), and Machine Learning (ML)</b>.
+</p>
+
+<p>
+She has delivered <b>210+ Technical Webinars, workshops, expert talks </b> and <b>87+ ATAL Faculty Development Programs</b> across 21 states of India.
+</p>
+
+</div>
+</section>
+
+<!-- MENTORSHIP (UPDATED SEQUENCE) -->
+<section>
+<div class="card">
+
+<h2>🎯 Mentorship Programs (Complete System)</h2>
+
+<h3>🎓 1. B.Tech Mentorship (4-Year Roadmap)</h3>
 <ul>
-<li>Resume Building</li>
-<li>Mock Interviews</li>
-<li>AI / ML Guidance</li>
-<li>Career Planning</li>
-<li>EV and BMS Simulations</li>
-<li>Simulation Guidance for HFSS, SIwave and EMI-EMC </li>
-<li>Engineering Research (PhD Guidance)</li>
+<li>Year 1: Engineering basics + coding foundation + communication skills</li>
+<li>Year 2: Core subjects + mini projects + GitHub profile</li>
+<li>Year 3: Advanced tools (HFSS, MATLAB, AI basics) + internships</li>
+<li>Year 4: Major project + placement training + interview prep</li>
+<li>Outcome: Job-ready engineer before graduation</li>
 </ul>
+
+<h3>🎓 2. M.Tech Mentorship Program</h3>
+<ul>
+<li>Research topic selection (high impact areas)</li>
+<li>Literature review & gap identification</li>
+<li>Simulation work (HFSS / SIWAVE / MATLAB)</li>
+<li>IEEE paper writing & publication guidance</li>
+<li>Thesis structure (chapter-wise support)</li>
+<li>Outcome: Strong academic + research profile</li>
+</ul>
+
+<h3>🎓 3. PhD Mentorship Program</h3>
+<ul>
+<li>Research problem identification</li>
+<li>Proposal / synopsis preparation</li>
+<li>SCI / Scopus journal publishing strategy</li>
+<li>Conference paper guidance</li>
+<li>Thesis writing + defense preparation</li>
+<li>Outcome: Successful PhD completion with publications</li>
+</ul>
+
 </div>
 </section>
 
-<!-- ACHIEVEMENTS -->
+<!-- TECH SKILLS -->
 <section>
 <div class="card">
-<h2>🏆 Achievements</h2>
+
+<h2>🚀 Technical Skills Covered</h2>
+
 <div class="grid">
-<div class="box">210+ Webinars</div>
-<div class="box">87+ FDPs</div>
-<div class="box">21 States</div>
-<div class="box">Thousands Mentored</div>
+<div class="box">HFSS Simulation</div>
+<div class="box">SIWAVE Analysis</div>
+<div class="box">EMI / EMC</div>
+<div class="box">RF Engineering</div>
+<div class="box">AI / ML</div>
+<div class="box">Research Writing</div>
 </div>
+
 </div>
 </section>
 
-<!-- SOCIAL -->
-<section>
+<!-- FORM -->
+<section id="form">
 <div class="card">
-<h2>🌐 Connect</h2>
-<div class="social">
-<a href="https://youtube.com/@kasthurisudampatil">YouTube</a>
-<a href="https://instagram.com/kasturisudampatil">Instagram</a>
-<a href="https://facebook.com/kasturipatil8130">Facebook</a>
-<a href="https://linkedin.com/in/kasturi-patil-14bbb864">LinkedIn</a>
-</div>
-</div>
-</section>
 
-<!-- CONTACT -->
-<section id="contact">
-<div class="card">
-<h2>📩 Enquiry</h2>
+<h2>📩 Start Your Career Journey</h2>
 
-<form>
-<input type="text" placeholder="Name">
-<input type="email" placeholder="Email">
-<input type="tel" placeholder="Mobile">
-<textarea rows="4" placeholder="Your Query"></textarea>
-<button>Submit</button>
+<form onsubmit="lead(event)">
+<input id="name" placeholder="Name" required>
+<input id="phone" placeholder="WhatsApp Number" required>
+<textarea id="goal" placeholder="Your Goal (B.Tech / M.Tech / PhD / Job)" required></textarea>
+
+<button type="submit">Get Free Career Plan</button>
 </form>
 
-<p style="margin-top:10px;"><b>WhatsApp:</b> 9730858130</p>
 </div>
 </section>
 
-<!-- WHATSAPP -->
-<a class="whatsapp"
-href="https://wa.me/919730858130?text=Hello%20I%20need%20career%20guidance">
-💬
-</a>
+<!-- CHAT -->
+<div class="chat-btn" onclick="toggleChat()">Career AI</div>
 
-<!-- CHAT BUTTON -->
-<div class="chat-btn" onclick="toggleChat()">Mrunmayi AI</div>
-
-<!-- CHATBOX -->
 <div class="chatbox" id="chatbox">
 
-<div class="chat-header">Mrunmayi AI Assistant</div>
+<div class="chat-header">AI Career Mentor</div>
 
 <div class="chat-body" id="chatBody">
-Hello 👋 I am Mrunmayi AI. Ask me about Career, Resume, Jobs, AI, ML.
+Hi 👋 Ask about B.Tech, M.Tech, PhD, HFSS, SIWAVE, EMI/EMC, Jobs, Research.
 </div>
 
 <div class="chat-input">
-<input id="userInput" placeholder="Ask something...">
-<button onclick="sendMsg()">Send</button>
+<input id="msg" placeholder="Ask anything...">
+<button onclick="askAI()">Send</button>
 </div>
 
 </div>
 
-<!-- FOOTER -->
-<footer>
-Dr. Kasturi Patil Career Campus © 2026
-</footer>
+<!-- WHATSAPP -->
+<a class="whatsapp"
+href="https://wa.me/919730858130?text=Hi%20I%20need%20career%20guidance">
+WhatsApp
+</a>
 
 <script>
 
+function lead(e){
+e.preventDefault();
+
+let name=document.getElementById("name").value;
+let phone=document.getElementById("phone").value;
+let goal=document.getElementById("goal").value;
+
+let url=`https://wa.me/919730858130?text=NEW%20LEAD:%0AName:${name}%0APhone:${phone}%0AGoal:${goal}`;
+window.open(url,"_blank");
+}
+
 function toggleChat(){
 let box=document.getElementById("chatbox");
-
-if(box.style.display==="flex"){
-box.style.display="none";
-}else{
-box.style.display="flex";
+box.style.display=(box.style.display==="flex")?"none":"flex";
 box.style.flexDirection="column";
 }
-}
 
-function sendMsg(){
+function askAI(){
 
-let input=document.getElementById("userInput");
+let msg=document.getElementById("msg").value.toLowerCase();
 let chat=document.getElementById("chatBody");
 
-let msg=input.value;
-if(msg.trim()==="") return;
+let reply="I can help with Career Guidance, B.Tech, M.Tech, PhD, HFSS, SIWAVE, EMI/EMC.";
 
-chat.innerHTML+="<br><b>You:</b> "+msg;
+if(msg.includes("btech")) reply="B.Tech roadmap: basics → core → projects → internship → placement.";
+else if(msg.includes("mtech")) reply="M.Tech: research → simulation → IEEE paper → thesis.";
+else if(msg.includes("phd")) reply="PhD: problem → proposal → journals → thesis → defense.";
+else if(msg.includes("hfss")) reply="HFSS is used for antenna and RF simulation.";
+else if(msg.includes("siwave")) reply="SIWAVE is used for PCB signal integrity.";
+else if(msg.includes("emi")) reply="EMI/EMC ensures electromagnetic compatibility in systems.";
 
-msg=msg.toLowerCase();
-
-let reply="";
-
-if(msg.includes("resume")){
-reply="Build ATS-friendly resume with skills + projects.";
-}
-else if(msg.includes("job")){
-reply="Improve LinkedIn + projects + skills.";
-}
-else if(msg.includes("ai") || msg.includes("ml")){
-reply="Start with Python, basics and real projects.";
-}
-else if(msg.includes("interview")){
-reply="Practice mock interviews and communication skills.";
-}
-else{
-reply="I can help with Career, Resume, Jobs, AI, ML.";
-}
-
-chat.innerHTML+="<br><b>Mrunmayi AI:</b> "+reply;
-
-input.value="";
-chat.scrollTop=chat.scrollHeight;
+chat.innerHTML += "<br><b>AI:</b> "+reply;
 }
 
 </script>
